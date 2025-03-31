@@ -1,0 +1,88 @@
+.user-form {
+    max-width: 300px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .user-form input,
+  .user-form select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+  }
+  
+  .user-form input:focus,
+  .user-form select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .user-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .user-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .user-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 768px) {
+    .user-form {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .user-form input,
+    .user-form select {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .user-form button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .user-form {
+      padding: 12px;
+    }
+  
+    .user-form label {
+      font-size: 14px;
+    }
+  
+    .user-form button {
+      font-size: 14px;
+    }
+  }
+  

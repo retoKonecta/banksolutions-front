@@ -1,12 +1,55 @@
-# React + Vite
+Instrucciones para ejecutar el proyecto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1️ Clonar el repositorio
 
-Currently, two official plugins are available:
+git clone https://github.com/retoKonecta/banksolutions-back.git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2️ Configurar el Backend
 
-## Expanding the ESLint configuration
+Asegúrate de tener Node.js instalado
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Instala las dependencias:
+
+te ubicas en el proyecto clonado
+npm install
+
+Configura las variables de entorno. Crea un archivo .env en la carpeta backend con los siguientes datos:
+
+JWT_SECRET=cnsmewopinjvhkoiLJASHGDF65
+
+
+PGHOST=localhost
+PGUSER=postgres
+PGPASSWORD=tu_contraseña
+PGDATABASE=banco
+PGPORT=5432
+
+Importar la base de datos banco.sql en PostgreSQL
+el archivo está en el repositorio del backend
+
+Ejecuta el servidor:
+
+npm run dev
+
+3️ Configurar el Frontend
+
+clonar el repositorio
+git clone https://github.com/retoKonecta/banksolutions-front.git
+
+ubicarse en el proyecto 
+
+Abre una nueva terminal y ejecuta:
+
+npm install
+npm run dev
+
+4️ Credenciales para probar el login
+
+Correo: caro@gmail.com
+Contraseña: 123456
+
+Notas:
+
+El backend corre en http://localhost:3000.
+El frontend corre en http://localhost:5173 (o el puerto que indique en la consola).
+
